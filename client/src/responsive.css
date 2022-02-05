@@ -1,0 +1,726 @@
+@media screen and (max-width: 1179px) {
+  .header {
+    height: 20vh;
+    padding: 10px 10px;
+    flex-direction: column;
+  }
+  .header .brand h2 {
+    font-size: 22px;
+    width: max-content;
+    margin-top: 0px;
+  }
+  .menu {
+    padding: 0px;
+    margin: 0px;
+    width: 100% !important;
+    display: flex;
+    justify-content: center;
+  }
+
+  .addBalance {
+    width: 130px;
+    height: 30px;
+  }
+  .addBalance p {
+    font-size: 12px;
+  }
+  .header .menu a {
+    margin: 0px 5px !important;
+    padding: 0px !important;
+    float: left;
+    display: block;
+    font-size: 12px;
+    width: max-content !important;
+  }
+  .header .menu button {
+    margin: 0px 5px;
+    padding: 3px 10px;
+    padding-bottom: 5px;
+  }
+  .loginContainer {
+    height: 100%;
+  }
+  .login {
+    width: 100%;
+    height: 100%;
+    border-radius: 0px;
+    background: rgb(0, 199, 189);
+    box-shadow: none;
+  }
+  .login p,
+  h4 {
+    color: rgb(63, 73, 92);
+    margin-top: 10px;
+  }
+  main {
+    height: 100%;
+    padding: 10px;
+  }
+
+  /* Homepage Section */
+  
+  .topRow {
+    padding: 0px !important;
+    display: block;
+  }
+  .topRow .card {
+    padding: 10px;
+    width: 48%;
+    margin: 3px;
+  }
+  .topRow .card h5 {
+    font-size: 14px;
+  }
+  .topRow .card h2 {
+    font-size: 18px;
+  }
+
+  .investmentRecord {
+    padding: 0px;
+  }
+  .investmentRecord table th,
+  td {
+    padding: 8px 5px;
+    font-size: 12px;
+    word-wrap: break-word;
+  }
+  .investmentRecord table th {
+    display: block !important;
+    height: 100% !important;
+  }
+  .serial {
+    width: 8%;
+  }
+  .memberName {
+    width: 27%;
+    text-align: left !important;
+  }
+  .investment {
+    width: 20%;
+  }
+  .interest {
+    width: 10%;
+  }
+  .collection {
+    width: 20%;
+  }
+  .profit {
+    width: 15%;
+  }
+
+  .userEntry {
+    padding: 30px 0px;
+  }
+  .userEntry .inputRow {
+    display: block;
+  }
+  .userEntry .inputRow input {
+    width: 100%;
+    margin: 10px 0px;
+  }
+  .userEntry .inputRow input.smallInput {
+    width: 100%;
+  }
+
+  /* Users Secton */
+
+  .usersData {
+    padding: 20px 0px;
+    padding-bottom: 30px;
+  }
+  .usersData td,
+  th {
+    font-size: 12px;
+    word-wrap: break-word;
+  }
+
+  .col5 {
+    width: 8%;
+  }
+  .col6 {
+    width: 20%;
+    text-align: left !important;
+  }
+  .col7 {
+    width: 15%;
+    text-align: left !important;
+  }
+  .col8 {
+    width: 10%;
+  }
+  .col9 {
+    width: 15%;
+  }
+  .col10 {
+    width: 8%;
+  }
+  .col11 {
+    width: 14%;
+  }
+  .col12 {
+    width: 10% !important;
+    background: none;
+    padding: 0px !important;
+    padding: 0px !important;
+  }
+  .col12 svg {
+    padding: 0px !important;
+    margin: 0px !important;
+    font-size: 14px;
+    width: 100% !important;
+  }
+  .col12 svg path {
+    color: rgb(63, 73, 92);
+  }
+
+  /* Profile Section */
+
+  .user {
+    display: block;
+  }
+  .user .box {
+    width: 100%;
+  }
+  .user .box h4 {
+    padding: 20px 0px !important;
+  }
+  .profile {
+    padding: 10px;
+  }
+  .profile h5,
+  span {
+    font-size: 14px !important;
+  }
+  .loanDetails {
+    padding: 10px;
+  }
+  .loanDetails div p,
+  h5 {
+    font-size: 10px;
+  }
+  .loanDetails div h5 {
+    font-size: 14px;
+  }
+  .monthlyEntry {
+    display: block;
+  }
+  .monthlyEntry input,
+  button {
+    padding: 4px 5px;
+    width: 100%;
+    font-size: 14px;
+    margin: 5px 0px;
+  }
+  .monthlyEntry button {
+    width: 100%;
+    padding: 8px 10px;
+  }
+  .col1 {
+    width: 30%;
+  }
+  .col2 {
+    width: 10%;
+  }
+  .col3 {
+    width: 30%;
+  }
+  .col4 {
+    width: 30%;
+  }
+
+  /* Footer Section */
+
+  .footer {
+    height: 10vh;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    height: 20vh;
+    padding: 10px 10px;
+    flex-direction: column;
+  }
+  .header .brand h2 {
+    font-size: 22px;
+    width: max-content;
+    margin-top: 0px;
+  }
+  .menu {
+    padding: 0px;
+    margin: 0px;
+    width: 100% !important;
+    display: flex;
+    justify-content: center;
+  }
+
+  .addBalance {
+    width: 130px;
+    height: 30px;
+  }
+  .addBalance p {
+    font-size: 12px;
+  }
+  .header .menu a {
+    margin: 0px 5px !important;
+    padding: 0px !important;
+    float: left;
+    display: block;
+    font-size: 12px;
+    width: max-content !important;
+  }
+  .header .menu button {
+    margin: 0px 5px;
+    padding: 3px 10px;
+    padding-bottom: 5px;
+  }
+  .loginContainer {
+    height: 100%;
+  }
+  .login {
+    width: 100%;
+    height: 100%;
+    border-radius: 0px;
+    background: rgb(0, 199, 189);
+    box-shadow: none;
+  }
+  .login p,
+  h4 {
+    color: rgb(63, 73, 92);
+    margin-top: 10px;
+  }
+  main {
+    height: 100%;
+    padding: 10px;
+  }
+
+  /* Homepage Section */
+
+  .topRow {
+    padding: 0px !important;
+    display: block;
+  }
+  .topRow .card {
+    padding: 10px;
+    width: 48%;
+    margin: 3px;
+  }
+  .topRow .card h5 {
+    font-size: 14px;
+  }
+  .topRow .card h2 {
+    font-size: 18px;
+  }
+
+  .investmentRecord {
+    padding: 0px;
+  }
+  .investmentRecord table th,
+  td {
+    padding: 8px 5px;
+    font-size: 12px;
+    word-wrap: break-word;
+  }
+  .investmentRecord table th {
+    display: block !important;
+    height: 100% !important;
+  }
+  .serial {
+    width: 8%;
+  }
+  .memberName {
+    width: 27%;
+    text-align: left !important;
+  }
+  .investment {
+    width: 20%;
+  }
+  .interest {
+    width: 10%;
+  }
+  .collection {
+    width: 20%;
+  }
+  .profit {
+    width: 15%;
+  }
+
+  .userEntry {
+    padding: 30px 0px;
+  }
+  .userEntry .inputRow {
+    display: block;
+  }
+  .userEntry .inputRow input {
+    width: 100%;
+    margin: 10px 0px;
+  }
+  .userEntry .inputRow input.smallInput {
+    width: 100%;
+  }
+
+  /* Users Secton */
+
+  .usersData {
+    padding: 20px 0px;
+    padding-bottom: 30px;
+  }
+  .usersData td,
+  th {
+    font-size: 12px;
+    word-wrap: break-word;
+  }
+
+  .col5 {
+    width: 8%;
+  }
+  .col6 {
+    width: 20%;
+    text-align: left !important;
+  }
+  .col7 {
+    width: 15%;
+    text-align: left !important;
+  }
+  .col8 {
+    width: 10%;
+  }
+  .col9 {
+    width: 15%;
+  }
+  .col10 {
+    width: 8%;
+  }
+  .col11 {
+    width: 14%;
+  }
+  .col12 {
+    width: 10% !important;
+    background: none;
+    padding: 0px !important;
+    padding: 0px !important;
+  }
+  .col12 svg {
+    padding: 0px !important;
+    margin: 0px !important;
+    font-size: 14px;
+    width: 100% !important;
+  }
+  .col12 svg path {
+    color: rgb(63, 73, 92);
+  }
+
+  /* Profile Section */
+
+  .user {
+    display: block;
+  }
+  .user .box {
+    width: 100%;
+  }
+  .user .box h4 {
+    padding: 20px 0px !important;
+  }
+  .profile {
+    padding: 10px;
+  }
+  .profile h5,
+  span {
+    font-size: 14px !important;
+  }
+  .loanDetails {
+    padding: 10px;
+  }
+  .loanDetails div p,
+  h5 {
+    font-size: 10px;
+  }
+  .loanDetails div h5 {
+    font-size: 14px;
+  }
+  .monthlyEntry {
+    display: block;
+  }
+  .monthlyEntry input,
+  button {
+    padding: 4px 5px;
+    width: 100%;
+    font-size: 14px;
+    margin: 5px 0px;
+  }
+  .monthlyEntry button {
+    width: 100%;
+    padding: 8px 10px;
+  }
+  .col1 {
+    width: 30%;
+  }
+  .col2 {
+    width: 10%;
+  }
+  .col3 {
+    width: 30%;
+  }
+  .col4 {
+    width: 30%;
+  }
+
+  /* Footer Section */
+
+  .footer {
+    height: 10vh;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .header {
+    height: 20vh;
+    padding: 10px 10px;
+    flex-direction: column;
+  }
+  .header .brand h2 {
+    font-size: 22px;
+    width: max-content;
+    margin-top: 0px;
+  }
+  .menu {
+    padding: 0px;
+    margin: 0px;
+    width: 100% !important;
+    display: flex;
+    justify-content: center;
+  }
+
+  .addBalance {
+    width: 130px;
+    height: 30px;
+  }
+  .addBalance p {
+    font-size: 12px;
+  }
+  .header .menu a {
+    margin: 0px 5px !important;
+    padding: 0px !important;
+    float: left;
+    display: block;
+    font-size: 12px;
+    width: max-content !important;
+  }
+  .header .menu button {
+    margin: 0px 5px;
+    padding: 3px 10px;
+    padding-bottom: 5px;
+  }
+  .loginContainer {
+    height: 100%;
+  }
+  .login {
+    width: 100%;
+    height: 100%;
+    border-radius: 0px;
+    background: rgb(0, 199, 189);
+    box-shadow: none;
+  }
+  .login p,
+  h4 {
+    color: rgb(63, 73, 92);
+    margin-top: 10px;
+  }
+  main {
+    height: 100%;
+    padding: 10px;
+  }
+
+  /* Homepage Section */
+
+  .topRow {
+    padding: 0px !important;
+    display: block;
+  }
+  .topRow .card {
+    padding: 10px;
+    width: 48%;
+    margin: 3px;
+  }
+  .topRow .card h5 {
+    font-size: 14px;
+  }
+  .topRow .card h2 {
+    font-size: 18px;
+  }
+
+  .investmentRecord {
+    padding: 0px;
+  }
+  .investmentRecord table th,
+  td {
+    padding: 8px 5px;
+    font-size: 12px;
+    word-wrap: break-word;
+  }
+  .investmentRecord table th {
+    display: block !important;
+    height: 100% !important;
+  }
+  .serial {
+    width: 8%;
+  }
+  .memberName {
+    width: 27%;
+    text-align: left !important;
+  }
+  .investment {
+    width: 20%;
+  }
+  .interest {
+    width: 10%;
+  }
+  .collection {
+    width: 20%;
+  }
+  .profit {
+    width: 15%;
+  }
+
+  .userEntry {
+    padding: 30px 0px;
+  }
+  .userEntry .inputRow {
+    display: block;
+  }
+  .userEntry .inputRow input {
+    width: 100%;
+    margin: 10px 0px;
+  }
+  .userEntry .inputRow input.smallInput {
+    width: 100%;
+  }
+
+  /* Users Secton */
+
+  .usersData {
+    padding: 20px 0px;
+    padding-bottom: 30px;
+  }
+  .usersData td,
+  th {
+    font-size: 12px;
+    word-wrap: break-word;
+  }
+
+  .col5 {
+    width: 8%;
+  }
+  .col6 {
+    width: 20%;
+    text-align: left !important;
+  }
+  .col7 {
+    width: 15%;
+    text-align: left !important;
+  }
+  .col8 {
+    width: 10%;
+  }
+  .col9 {
+    width: 15%;
+  }
+  .col10 {
+    width: 8%;
+  }
+  .col11 {
+    width: 14%;
+  }
+  .col12 {
+    width: 10% !important;
+    background: none;
+    padding: 0px !important;
+    padding: 0px !important;
+  }
+  .col12 svg {
+    padding: 0px !important;
+    margin: 0px !important;
+    font-size: 14px;
+    width: 100% !important;
+  }
+  .col12 svg path {
+    color: rgb(63, 73, 92);
+  }
+
+  /* Profile Section */
+
+  .user {
+    display: block;
+  }
+  .user .box {
+    width: 100%;
+  }
+  .user .box h4 {
+    padding: 20px 0px !important;
+  }
+  .profile {
+    padding: 10px;
+  }
+  .profile h5,
+  span {
+    font-size: 14px !important;
+  }
+  .loanDetails {
+    padding: 10px;
+  }
+  .loanDetails div p,
+  h5 {
+    font-size: 10px;
+  }
+  .loanDetails div h5 {
+    font-size: 14px;
+  }
+  .monthlyEntry {
+    display: block;
+  }
+  .monthlyEntry input,
+  button {
+    padding: 4px 5px;
+    width: 100%;
+    font-size: 14px;
+    margin: 5px 0px;
+  }
+  .monthlyEntry button {
+    width: 100%;
+    padding: 8px 10px;
+  }
+  .col1 {
+    width: 30%;
+  }
+  .col2 {
+    width: 10%;
+  }
+  .col3 {
+    width: 30%;
+  }
+  .col4 {
+    width: 30%;
+  }
+
+  /* 404 Error Section */
+
+  .notFound {
+    height: 70vh;
+    padding: 0px 10px;
+    text-align: center;
+  }
+  .notFound h1 {
+    font-size: 100px;
+    font-weight: 800;
+    float: left;
+    padding: 0px;
+    margin: 0px;
+    color: rgb(63, 73, 92);
+  }
+
+  /* Footer Section */
+
+  .footer {
+    height: 10vh;
+  }
+}

@@ -1,0 +1,622 @@
+/*
+
+@ Application Name - ZSN
+@ Version - 1.0
+@ Developer - Zisanur Haque (WordPress & Reac Developer)
+@ Developer's Website - https://zisanurhaque.com
+@ GitHub Link - https://github.com/zisanurhaque
+
+*/
+
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: bahnschrift;
+  font-size: 16px;
+  font-weight: 300;
+}
+.Toastify__close-button {
+  padding: 0px !important;
+  margin: 0px !important;
+  background: none !important;
+  width: max-content !important;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span {
+  padding: 0px;
+  margin: 0px;
+}
+
+/* Header Section */
+
+.header {
+  float: left;
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 100px;
+  background: rgb(98, 0, 255);
+}
+.header a {
+  text-decoration: none;
+}
+.header .brand h2 {
+  color: white;
+  padding: 0px;
+  margin: 0px;
+  float: left;
+  margin-top: 4px;
+}
+.addBalance {
+  width: 180px;
+  background: rgb(233, 233, 233);
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  align-items: center;
+  justify-content: center;
+  height: 35px;
+  padding: 0px;
+  margin: 0px;
+  float: left;
+}
+.addBalance p {
+  color: rgb(0, 0, 0);
+  text-align: center;
+  width: 60%;
+  padding: 0px;
+  margin: 0px;
+  float: left;
+  height: 100%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.addBalance button {
+  background: none;
+  padding: 0px;
+  margin: 0px;
+  float: left;
+  border: none;
+  width: 20%;
+  height: 100%;
+}
+.addBalance button:hover {
+  background: rgb(168, 168, 168);
+}
+.addBalance .minus svg {
+  margin-bottom: 7px;
+}
+.addBalance button svg {
+  font-size: 14px;
+}
+.menu {
+  float: left;
+  display: flex;
+  align-items: center;
+  width: max-content !important;
+}
+.header .menu a {
+  text-decoration: none;
+  color: white;
+  float: left;
+  padding: 0px;
+  margin: 0px;
+  margin-left: 15px;
+  display: flex;
+}
+.header .menu button {
+  float: left;
+  width: max-content !important;
+  margin: 0px;
+  margin-left: 15px;
+  padding: 5px 15px;
+  padding-bottom: 6px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background: rgb(63, 73, 92);
+  color: white;
+}
+.header .toggle {
+  display: none;
+}
+
+/* Login Section */
+
+.loginContainer {
+  float: left;
+  width: 100%;
+  display: flex;
+  height: 80vh;
+  background: none;
+  justify-content: center;
+  align-items: center;
+  background: rgb(236, 236, 236);
+}
+
+.login {
+  width: 400px;
+  height: 400px;
+  float: left;
+  padding: 20px 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 3px;
+  z-index: 999;
+  position: relative;
+  background: rgb(63, 73, 92);
+  box-shadow: 0px 0px 5px 0px rgb(88, 88, 88);
+}
+
+.login input,
+button {
+  width: 100%;
+  padding: 8px 10px;
+  margin: 10px 0px;
+  float: left;
+  outline: none;
+  border-radius: 2px;
+  border: none;
+}
+.login button {
+  background: rgb(98, 0, 255);
+  border: 1px solid rgb(98, 0, 255);
+  width: 100%;
+  padding: 8px 10px;
+  margin: 10px 0px;
+  float: left;
+  outline: none;
+  color: white;
+}
+.login p,
+h4 {
+  color: white;
+  margin-top: 10px;
+}
+
+/* Homepage Section */
+
+.topRow {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  float: left;
+  padding: 0px 100px;
+}
+.topRow .card {
+  float: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  width: 24%;
+  text-align: center;
+  background: rgb(98, 0, 255);
+  border-radius: 2px;
+}
+.topRow .card h5 {
+  font-weight: 300 !important;
+  padding: 0px;
+  margin: 0px;
+  float: left;
+  color: white;
+}
+.topRow .card h2 {
+  padding: 0px;
+  margin: 0px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  margin-top: 5px;
+  float: left;
+  color: rgb(0, 238, 255);
+}
+
+.investmentRecord {
+  width: 100%;
+  float: left;
+  padding: 0px 100px;
+}
+.investmentRecord table {
+  width: 100%;
+  border-collapse: collapse;
+  float: left;
+}
+.investmentRecord table tr {
+  width: 100%;
+  float: left;
+  background: rgb(0, 199, 189);
+}
+.investmentRecord table tr:nth-child(even) {
+  background: rgb(0, 225, 255);
+}
+.investmentRecord table tr a {
+  float: left;
+  width: 100%;
+}
+.investmentRecord table th,
+td {
+  float: left;
+  color: black;
+  padding: 8px 10px;
+  text-align: center;
+}
+.investmentRecord table th {
+  background: rgb(98, 0, 255);
+  color: white;
+}
+.serial {
+  width: 5%;
+}
+.memberName {
+  width: 30%;
+  text-align: left !important;
+}
+.investment {
+  width: 20%;
+}
+.interest {
+  width: 10%;
+}
+.collection {
+  width: 20%;
+}
+.profit {
+  width: 15%;
+}
+
+/* Main */
+
+main {
+  width: 100%;
+  float: left;
+  padding: 50px 100px;
+  height: 80vh;
+}
+
+/* User Section */
+
+.user {
+  width: 100%;
+  float: left;
+  display: flex;
+  justify-content: space-between;
+}
+.user .box {
+  width: 49%;
+  float: left;
+}
+.profile {
+  width: 100%;
+  float: left;
+  padding: 20px;
+  background: rgb(83, 85, 105);
+  border-radius: 2px;
+}
+.profile h5,
+span {
+  font-family: bahnschrift;
+  color: white;
+  font-size: 18px;
+  font-weight: 300;
+}
+.profile span {
+  width: 80px;
+  float: left;
+  font-size: 18px;
+}
+.loanDetails {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  float: left;
+  padding: 20px;
+  background: rgb(235, 235, 235);
+  border-radius: 2px;
+}
+.loanDetails div {
+  float: left;
+  text-align: center;
+}
+.loanDetails div p,
+h5 {
+  color: rgb(0, 0, 0);
+}
+
+/* Entry Section */
+
+.monthlyEntry {
+  display: flex;
+  justify-content: space-between;
+  float: left;
+  width: 100%;
+}
+.monthlyEntry input,
+button {
+  padding: 4px 15px;
+  padding-bottom: 5px;
+  margin: 0px;
+  float: left;
+  width: 27%;
+  outline: none;
+}
+.monthlyEntry button {
+  border: none;
+  background: rgb(63, 73, 92);
+  color: white;
+  width: 15%;
+  border-radius: 2px;
+}
+
+/* Data History Section */
+
+.data {
+  width: 100%;
+  float: left;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+.data table {
+  border-collapse: collapse;
+  width: 100%;
+  float: left;
+}
+.data tr {
+  width: 100%;
+  float: left;
+  background: rgb(0, 199, 189);
+}
+.data tr a {
+  float: left;
+  width: 100%;
+}
+.data tr:nth-child(even) {
+  background: rgb(0, 225, 255);
+}
+.data td,
+th {
+  padding: 5px 10px;
+  float: left;
+  color: black;
+}
+.data th {
+  font-weight: 400;
+  background: rgb(98, 0, 255);
+  color: white;
+}
+.col1 {
+  width: 20%;
+}
+.col2 {
+  width: 10%;
+}
+.col3 {
+  width: 40%;
+}
+.col4 {
+  width: 30%;
+}
+
+/* Users Section */
+
+.usersData {
+  width: 100%;
+  float: left;
+  display: flex;
+  flex-direction: column;
+  padding: 0px 200px;
+}
+
+.usersData table {
+  border-collapse: collapse;
+  width: 100%;
+  float: left;
+  position: relative;
+}
+.usersData tr {
+  width: 100%;
+  float: left;
+  background: rgb(0, 199, 189);
+  position: relative;
+}
+.usersData tr button {
+  position: absolute;
+  right: 0;
+  width: 5% !important;
+  border: none;
+  height: 100%;
+  padding: 0px;
+  margin: 0px;
+}
+.usersData tr button:hover {
+  background: red;
+}
+.usersData tr a {
+  float: left;
+  width: 100%;
+}
+.usersData tr:nth-child(even) {
+  background: rgb(0, 225, 255);
+}
+.usersData td,
+th {
+  padding: 8px 0px;
+  float: left;
+  color: black;
+  text-align: center;
+}
+.usersData th {
+  font-weight: 400;
+  background: rgb(98, 0, 255);
+  color: white;
+}
+
+.col5 {
+  width: 6%;
+  text-align: center;
+}
+.col6 {
+  width: 30%;
+  text-align: left !important;
+}
+.col7 {
+  width: 12%;
+  text-align: left !important;
+}
+.col8 {
+  width: 10%;
+}
+.col9 {
+  width: 15%;
+}
+.col10 {
+  width: 8%;
+}
+.col11 {
+  width: 14%;
+}
+.col12 {
+  width: 5% !important;
+  background: none;
+  padding-right: 0px;
+  padding-left: 0px;
+}
+.col12 svg path {
+  color: rgb(63, 73, 92);
+}
+.col12:hover svg path {
+  color: white;
+}
+
+/* Add Member Section */
+
+.userEntry {
+  width: 100%;
+  float: left;
+  display: flex;
+  flex-direction: column;
+  padding: 0px 200px;
+  height: 100%;
+  justify-content: center;
+}
+.userEntry h4 {
+  padding: 0px;
+  margin: 0px;
+  width: 100%;
+  text-align: center;
+}
+.userEntry .inputRow {
+  display: flex;
+  justify-content: space-between;
+}
+.userEntry .inputRow input {
+  width: 39%;
+  margin: 10px 0px;
+}
+.userEntry .inputRow input.smallInput {
+  width: 20%;
+}
+.userEntry input {
+  float: left;
+  padding: 8px 10px;
+  border-radius: 2px;
+  border: 1px solid rgb(63, 73, 92);
+  outline: none;
+}
+.second input {
+  width: 24% !important;
+}
+.userEntry input.halfInput {
+  width: 49%;
+  background: rgb(255, 251, 0);
+  color: rgb(0, 0, 0);
+  border: none;
+}
+.userEntry button {
+  border: none;
+  background: rgb(63, 73, 92);
+  color: white;
+  border-radius: 2px;
+  padding: 10px 15px;
+  width: 100%;
+  margin: 10px 0px;
+}
+
+/* 404 Error Page */
+
+.notFound {
+  height: 80vh;
+  float: left;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.notFound h1 {
+  font-size: 150px;
+  font-weight: 800;
+  float: left;
+  padding: 0px;
+  margin: 0px;
+  color: rgb(63, 73, 92);
+}
+.notFound h4 {
+  font-weight: 600;
+  float: left;
+  padding: 0px;
+  margin: 0px;
+  color: rgb(63, 73, 92);
+}
+.notFound p {
+  font-weight: 300;
+  float: left;
+  padding: 5px 0px;
+  padding-bottom: 10px;
+  margin: 0px;
+  color: grey;
+}
+.notFound a {
+  font-weight: 300;
+  float: left;
+  padding: 5px 15px;
+  margin: 0px;
+  color: white;
+  text-decoration: none;
+  background: rgb(98, 0, 255);
+  border-radius: 2px;
+}
+
+/* Footer Section */
+
+.footer {
+  float: left;
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(63, 73, 92);
+  color: white;
+}
+.footer p {
+  color: white;
+}
+.footer span {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin-right: 2px;
+}
+.footer a {
+  color: rgb(0, 255, 234);
+  text-decoration: none;
+}
