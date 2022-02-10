@@ -158,7 +158,7 @@ const App = () => {
 
         localStorage.setItem('session', JSON.stringify(login));
         localStorage.setItem('balance', JSON.stringify(balance));
-        axios.get('http://localhost:3001/get').then(response => setUserList(response.data.data))
+        axios.get(`${process.env.URL}/get`).then(response => setUserList(response.data.data))
 
     }, [balance, login, duration, interest, loan, userList]);
 
@@ -311,7 +311,7 @@ const App = () => {
         }
         else{
             setBalance(balance - loan);
-            axios.post("http://localhost:3001/addUser", value)
+            axios.post(`${process.env.URL}/addUser`, value)
             toast.success("Member Added Successfully!", {
                 position: "top-center",
                 autoClose: 5000,
@@ -408,7 +408,7 @@ const App = () => {
             })
         }
         else{
-            axios.put(`http://localhost:3001/update/${id}`, value);
+            axios.put(`${process.env.URL}/update/${id}`, value);
             setBalance(balance + value.paid);
             toast.success("Monthly Debt Has Been Paid!", {
                 position: "top-center",
@@ -423,7 +423,7 @@ const App = () => {
     }
 
     const handleDelete = async (id) => {
-        await axios.delete(`http://localhost:3001/delete/${id}`);
+        await axios.delete(`${process.env.URL}/delete/${id}`);
         toast.error("Member Has Been Deleted! Investment Will Never Come Back.", {
             position: "top-center",
             autoClose: 5000,

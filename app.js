@@ -4,6 +4,7 @@ const bodyParser = require('body-parser');
 const cors = require('cors');
 const app = express();
 const mongoose = require('mongoose');
+const path = require('path')
 
 dotenv.config({path: './config.env'});
 
@@ -77,7 +78,10 @@ app.put('/update/:id', async (req, res) => {
 const PORT = process.env.PORT || 5500;
 
 if(process.env.NODE_ENV === 'production'){
-    app.use(express.static('client/build'))
+    app.use(express.static('client/build'));
+    app.get('*', (req, res) => {
+        res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'))
+    })
 }
 
 app.listen(PORT, () => {
