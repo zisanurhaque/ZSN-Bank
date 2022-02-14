@@ -158,7 +158,7 @@ const App = () => {
 
         localStorage.setItem('session', JSON.stringify(login));
         localStorage.setItem('balance', JSON.stringify(balance));
-        axios.get(`${process.env.URL}/get`).then(response => setUserList(response.data.data))
+        axios.get("https://zsnbnk.herokuapp.com/get").then(response => setUserList(response.data.data))
 
     }, [balance, login, duration, interest, loan, userList]);
 
@@ -311,7 +311,7 @@ const App = () => {
         }
         else{
             setBalance(balance - loan);
-            axios.post(`${process.env.URL}/addUser`, value)
+            axios.post("https://zsnbnk.herokuapp.com/addUser", value)
             toast.success("Member Added Successfully!", {
                 position: "top-center",
                 autoClose: 5000,
@@ -423,7 +423,7 @@ const App = () => {
     }
 
     const handleDelete = async (id) => {
-        await axios.delete(`${process.env.URL}/delete/${id}`);
+        await axios.delete(`https://zsnbnk.herokuapp.com/delete/${id}`);
         toast.error("Member Has Been Deleted! Investment Will Never Come Back.", {
             position: "top-center",
             autoClose: 5000,
