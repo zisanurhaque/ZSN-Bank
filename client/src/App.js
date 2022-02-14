@@ -408,7 +408,7 @@ const App = () => {
             })
         }
         else{
-            axios.put(`${process.env.URL}/update/${id}`, value);
+            axios.put(`https://zsnbnk.herokuapp.com/update/${id}`, value);
             setBalance(balance + value.paid);
             toast.success("Monthly Debt Has Been Paid!", {
                 position: "top-center",
