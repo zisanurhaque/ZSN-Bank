@@ -63,7 +63,7 @@ const Homepage = ({login, config, userList, balance, totalInvest, totalCollectio
                             {
                                 userList.map((item, index) => (
                                     <tr>
-                                        <a href={`/profile/${item.id}`}>
+                                        <a href={`/profile/${item._id}`}>
                                             <td className="serial">{index+1}</td>
                                             <td className="memberName">{item.userName}</td>
                                             <td className="investment">{item.loan}</td>
